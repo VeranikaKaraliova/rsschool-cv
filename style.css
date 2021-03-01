@@ -1,0 +1,253 @@
+html{
+  font-size: 16px;
+}
+body{
+  margin: 0;
+  background-color: #fdfdfe;
+}
+
+hr{
+  opacity: .5;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.container{
+  display: flex;
+  width: 90%;
+  margin: 2rem auto;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 8%);
+}
+
+.container-text{
+  width: 40%;
+  padding: 2rem 3rem;
+  color: #242f51;
+}
+
+.my-name{
+  margin: 10rem 0 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.position{
+  font-size: 2rem;
+  opacity: 0.7;
+  margin: 0rem;
+}
+.about-me{
+  font-size: 1.5rem;
+  opacity: .7;
+  font-style: italic;
+}
+
+.photo-main{
+  display: flex;
+  padding: 2rem 0;
+}
+
+.photo-main >img{
+  width: 29rem;
+  height: 29rem;
+  border-radius: 50rem;
+  margin: 2rem 3rem;
+  box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 15%);
+}
+
+.photo-main > img:hover{
+  box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 40%);
+  transition: all 0.3s;
+}
+
+/* skills */
+.skills{width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.skills > p{
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #616368;
+}
+
+/* education and work */
+
+.education, .work{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 3rem;
+}
+.education::after, .work::after{
+  content: '';
+  display: block;
+  margin: 1rem 0;
+  height: 1px;
+  opacity: 0.1;
+  background-color: #616368;
+
+}
+
+.education > p, .work > p , .work >span{
+  font-size: 1.2rem;
+  margin: 0;
+  color: #616368;
+}
+
+.education > p:first-child, .work >p:first-child {
+  color: #242f51;
+  font-weight: bold;
+}
+
+.education > p > span, .work > p> span, .work >span{
+  color: #242f51;
+}
+
+.work > ul{
+  margin: .5rem 0;
+  font-size: 1.2rem;
+  color: #616368;
+}
+
+/* contact */
+.container--column{
+  display: flex;
+  flex-direction: column;
+}
+
+.container--column > h1{
+  text-align: center;
+  margin: 3rem 0 0;
+  color: #242f51;
+}
+
+.container--column > h1:after{
+  content: '';
+  display: block;
+  margin: 1rem auto 0;
+  width: 85%;
+  height: 1px;
+  opacity: 0.2;
+  background-color: #616368;
+}
+
+.contact-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-box, .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.contact > i {
+  font-size: 2rem;
+  color: #2563ff;
+}
+
+.contact > p, a{
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: #616368;
+  text-decoration: none;
+}
+
+.contact > a:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px){
+
+  html{
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 1000px){
+
+  html{
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 875px){
+  html{
+    font-size: 11px;
+  }
+  .photo-main >img{
+    width: 25rem;
+    height: 26rem;
+  }
+}
+
+@media screen and (max-width: 730px){
+  html{
+    font-size: 11px;
+  }
+  .container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .container--column{
+    flex-direction: column;
+  }
+
+  .container-text{
+    width: fit-content;
+    padding: 0rem 3rem 2rem;
+  }
+  .my-name{
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+  .photo-main >img{
+    width: 60%;
+    height: 60%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 540px){
+  html{
+    font-size: 10px;
+  }
+  .container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .container--column{
+    flex-direction: column;
+  }
+
+  .container-text{
+    width: fit-content;
+    padding: 0rem 3rem 2rem;
+  }
+  .my-name{
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+  .photo-main >img{
+    width: 60%;
+    height: 60%;
+    margin: 2rem auto;
+  }
+
+  .contact{
+    padding: 2rem 1rem
+  }
+}
