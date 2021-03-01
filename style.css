@@ -42,6 +42,7 @@ hr{
   font-size: 1.5rem;
   opacity: .7;
   font-style: italic;
+  margin: 1rem 0;
 }
 
 .photo-main{
@@ -69,7 +70,7 @@ hr{
   font-size: 1.2rem;
 }
 
-.skills > p{
+.skills > li{
   margin: 0 auto;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -99,7 +100,8 @@ hr{
   color: #616368;
 }
 
-.education > p:first-child, .work >p:first-child {
+.education > h3, .work >h3 {
+  margin: 0;
   color: #242f51;
   font-weight: bold;
 }
@@ -148,13 +150,17 @@ hr{
   padding: 3rem;
 }
 
-.contact > i {
+.contact > li > i {
   font-size: 2rem;
   color: #2563ff;
 }
+.contact > li> h4{
+  margin: 0;
+}
 
-.contact > p, a{
+.contact > li, h4, a{
   margin: 1rem;
+  list-style-type: none;
   font-size: 1.2rem;
   color: #616368;
   text-decoration: none;
