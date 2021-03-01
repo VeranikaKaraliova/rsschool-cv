@@ -150,13 +150,18 @@ hr{
   padding: 3rem;
 }
 
-.contact > i {
+.contact > li > i {
   font-size: 2rem;
   color: #2563ff;
 }
+.contact > li> h4{
+  margin: 0;
+}
 
-.contact > h4, a{
+
+.contact > li, h4, a{
   margin: 1rem;
+  list-style-type: none;
   font-size: 1.2rem;
   color: #616368;
   text-decoration: none;
