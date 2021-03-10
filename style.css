@@ -12,6 +12,24 @@ hr{
   margin: 1.5rem 0;
 }
 
+header{
+  position: absolute;
+}
+
+header > nav {
+  display: flex;
+  padding: 2rem;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  color: #242f51;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+}
+
 .container{
   display: flex;
   width: 90%;
@@ -39,7 +57,7 @@ hr{
   margin: 0rem;
 }
 .about-me{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   opacity: .7;
   font-style: italic;
   margin: 1rem 0;
@@ -116,13 +134,17 @@ hr{
   color: #616368;
 }
 
+.work > ul > li{
+  list-style: none;
+}
+
 /* contact */
 .container--column{
   display: flex;
   flex-direction: column;
 }
 
-.container--column > h1{
+.container--column > h2{
   text-align: center;
   margin: 3rem 0 0;
   color: #242f51;
@@ -147,7 +169,7 @@ hr{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 .contact > li > i {
@@ -200,6 +222,11 @@ hr{
   html{
     font-size: 11px;
   }
+
+  header{
+    display: none;
+  }
+
   .container{
     flex-direction: column-reverse;
     text-align: center;
@@ -229,6 +256,11 @@ hr{
   html{
     font-size: 10px;
   }
+  
+  header{
+    display: none;
+  }
+
   .container{
     flex-direction: column-reverse;
     text-align: center;
